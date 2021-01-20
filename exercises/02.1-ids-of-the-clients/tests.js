@@ -5,35 +5,47 @@ var rewire = require("rewire");
 //I have to use rewire because the variables "clients" and "listClientsIds" are not exported
 const app = rewire("./app.js");
 
-//import the list of clients from app.js
-const clients = app.__get__('clients');
-
 //import the function listClientsIds from the app.js
 const listClientsIds = app.__get__('listClientsIds');
 
-it('The function listClientsIds should exists', function () {
-    expect(listClientsIds).toBeTruthy();
+test('The function returns an array', function () {
+    const car = [
+        { id: 1, taxNumber: '86620855', name: 'HECTOR ACUÑA BOLAÑOS'},
+        { id: 5, taxNumber: '94020190', name: 'VICTOR MANUEL ROJAS LUCAS'},
+        { id: 4, taxNumber: '88587715', name: 'SALVADOR ARNEDO MANRIQUEZ'},
+    ];
+    const result = listClientsIds(car);
+    expect(Array.isArray(result)).toBe(true);
 });
 
-it('The function listClientsIds should return an array', function () {
-    //execute the listClientsIds function from app.js
-    const result = listClientsIds();
-    expect(Array.isArray(result)).toBeTruthy();
+
+test('The array must not be empty', function () {
+    const car = [
+        { id: 1, taxNumber: '86620855', name: 'HECTOR ACUÑA BOLAÑOS'},
+        { id: 5, taxNumber: '94020190', name: 'VICTOR MANUEL ROJAS LUCAS'},
+        { id: 4, taxNumber: '88587715', name: 'SALVADOR ARNEDO MANRIQUEZ'},
+    ];
+    const result = listClientsIds(car);
+    expect(result.length > 0).toBe(true);
 });
 
-it('The function listClientsIds should return an array of 6 elements', function () {
-    //execute the listClientsIds function from app.js
-    const result = listClientsIds();
-    //Expect the console log to have been called with "Hello World" at least one
-    expect(result.length).toBe(6);
+test('Check for list of ids', function () {
+
+    const car = [
+        { id: 1, taxNumber: '86620855', name: 'HECTOR ACUÑA BOLAÑOS'},
+        { id: 5, taxNumber: '94020190', name: 'VICTOR MANUEL ROJAS LUCAS'},
+        { id: 4, taxNumber: '88587715', name: 'SALVADOR ARNEDO MANRIQUEZ'},
+    ];
+    const car2 = [
+        { id: 2, taxNumber: '86620855', name: 'HECTOR ACUÑA BOLAÑOS'},
+        { id: 44, taxNumber: '94020190', name: 'VICTOR MANUEL ROJAS LUCAS'},
+        { id: 56, taxNumber: '88587715', name: 'SALVADOR ARNEDO MANRIQUEZ'},
+    ];
+
+    const result = listClientsIds(car);
+    const result2 = listClientsIds(car2);
+    expect(result).toEqual([1,5,4]);
+    expect(result2).toEqual([2,44,56]);
 });
 
-it('The function listClientsIds should return an array with the clients ids', function () {
-    //execute the listClientsIds function from app.js
-    const result = listClientsIds();
 
-    // solution of the exercise (expected array values)
-    const solution = clients.map(c => c.id);
-    //create my own solution array and compare it with the result
-    expect(result).toEqual(solution);
-});

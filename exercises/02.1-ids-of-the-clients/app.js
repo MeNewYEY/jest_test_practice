@@ -1,4 +1,4 @@
-const clients = [
+const data = [
   { id: 1, taxNumber: '86620855', name: 'HECTOR ACUÑA BOLAÑOS'},
   { id: 5, taxNumber: '94020190', name: 'VICTOR MANUEL ROJAS LUCAS'},
   { id: 4, taxNumber: '88587715', name: 'SALVADOR ARNEDO MANRIQUEZ'},
@@ -7,6 +7,8 @@ const clients = [
   { id: 3, taxNumber: '73826497', name: 'ANDRES NADAL MOLINA'}
 ];
 
-const listClientsIds = () => {
-  // your code here
+const listClientsIds = (clients) => {
+    // your code here
 };
+
+console.log(listClientsIds(data))

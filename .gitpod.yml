@@ -6,7 +6,8 @@ ports:
       onOpen: open-preview
 tasks:
     - command: >
-        bc run -l node;
+        learnpack plugins:install learnpack-node &&
+        bc run -l node
 github:
     prebuilds:
         # enable for the master/default branch (defaults to true)
