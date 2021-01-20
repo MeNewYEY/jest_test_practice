@@ -7,7 +7,7 @@
 !.gitpod.Dockerfile
 !bc.json
 !.bc.json
-learn.json
+!learn.json
 !README.md
 
 !/exercises
