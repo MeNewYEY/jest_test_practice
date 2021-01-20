@@ -7,7 +7,7 @@ ports:
 tasks:
     - command: >
         learnpack plugins:install learnpack-node &&
-        bc run -l node
+        learnpack start
 github:
     prebuilds:
         # enable for the master/default branch (defaults to true)

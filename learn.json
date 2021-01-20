@@ -1,4 +1,334 @@
 {
+    "config": {
+        "port": 3000,
+        "address": "https://c83be99e-35a9-43b3-96ba-b90790b8d34d.ws-us03.gitpod.io",
+        "editor": {
+            "mode": "gitpod",
+            "version": "1.0.5"
+        },
+        "dirPath": "./.learn",
+        "configPath": "learn.json",
+        "outputPath": ".learn/dist",
+        "publicPath": "/preview",
+        "grading": "isolated",
+        "exercisesPath": "./exercises",
+        "disableGrading": false,
+        "actions": [
+            "build",
+            "test",
+            "reset"
+        ]
+    },
+    "entries": {
+        "html": "index.html",
+        "vanillajs": "index.js",
+        "react": "app.jsx",
+        "node": "app.js",
+        "python3": "app.py",
+        "java": "app.java"
+    },
     "title": "Practice your interview skills in js",
-    "graded": true
+    "graded": true,
+    "session": 4087856793351456300,
+    "exercises": [
+        {
+            "position": 0,
+            "path": "exercises/01-Welcome",
+            "slug": "01-Welcome",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "node",
+            "title": "01-Welcome",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/01-Welcome/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 1,
+            "path": "exercises/02-Banks-and-Clients",
+            "slug": "02-Banks-and-Clients",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "python3",
+            "title": "02-Banks-and-Clients",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/02-Banks-and-Clients/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02-Banks-and-Clients/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 2,
+            "path": "exercises/02.1-ids-of-the-clients",
+            "slug": "02.1-ids-of-the-clients",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "node",
+            "title": "02.1-ids-of-the-clients",
+            "graded": true,
+            "files": [
+                {
+                    "path": "exercises/02.1-ids-of-the-clients/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.1-ids-of-the-clients/app.js",
+                    "name": "app.js",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/02.1-ids-of-the-clients/solution.hide.js",
+                    "name": "solution.hide.js",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.1-ids-of-the-clients/tests.js",
+                    "name": "tests.js",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 3,
+            "path": "exercises/02.1-ids-sorted-by-taxnumber",
+            "slug": "02.1-ids-sorted-by-taxnumber",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "node",
+            "title": "02.1-ids-sorted-by-taxnumber",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/02.1-ids-sorted-by-taxnumber/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.1-ids-sorted-by-taxnumber/app.js",
+                    "name": "app.js",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/02.1-ids-sorted-by-taxnumber/solution.hide.js",
+                    "name": "solution.hide.js",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 4,
+            "path": "exercises/02.2-total-balances",
+            "slug": "02.2-total-balances",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "node",
+            "title": "02.2-total-balances",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/02.2-total-balances/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.2-total-balances/app.js",
+                    "name": "app.js",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/02.2-total-balances/solution.hide.js",
+                    "name": "solution.hide.js",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 5,
+            "path": "exercises/02.3-ritch-clients",
+            "slug": "02.3-ritch-clients",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "node",
+            "title": "02.3-ritch-clients",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/02.3-ritch-clients/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.3-ritch-clients/app.js",
+                    "name": "app.js",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/02.3-ritch-clients/solution.hide.js",
+                    "name": "solution.hide.js",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 6,
+            "path": "exercises/02.4-total-balance",
+            "slug": "02.4-total-balance",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "node",
+            "title": "02.4-total-balance",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/02.4-total-balance/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.4-total-balance/app.js",
+                    "name": "app.js",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/02.4-total-balance/solution.hide.js",
+                    "name": "solution.hide.js",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 7,
+            "path": "exercises/02.5-banks-fidelity",
+            "slug": "02.5-banks-fidelity",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "node",
+            "title": "02.5-banks-fidelity",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/02.5-banks-fidelity/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.5-banks-fidelity/app.js",
+                    "name": "app.js",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/02.5-banks-fidelity/solution.hide.js",
+                    "name": "solution.hide.js",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 8,
+            "path": "exercises/02.6-poor-clients",
+            "slug": "02.6-poor-clients",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "node",
+            "title": "02.6-poor-clients",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/02.6-poor-clients/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.6-poor-clients/app.js",
+                    "name": "app.js",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/02.6-poor-clients/solution.hide.js",
+                    "name": "solution.hide.js",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 9,
+            "path": "exercises/03-Google-Interview",
+            "slug": "03-Google-Interview",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "node",
+            "title": "03-Google-Interview",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/03-Google-Interview/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 10,
+            "path": "exercises/03.1-longest-word-in-dictionary",
+            "slug": "03.1-longest-word-in-dictionary",
+            "translations": {
+                "us": "README.md"
+            },
+            "language": "python3",
+            "title": "03.1-longest-word-in-dictionary",
+            "graded": false,
+            "files": [
+                {
+                    "path": "exercises/03.1-longest-word-in-dictionary/README.md",
+                    "name": "README.md",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/03.1-longest-word-in-dictionary/app.py",
+                    "name": "app.py",
+                    "hidden": false
+                },
+                {
+                    "path": "exercises/03.1-longest-word-in-dictionary/solution.hide.py",
+                    "name": "solution.hide.py",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        }
+    ]
 }
