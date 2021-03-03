@@ -44,6 +44,20 @@ const banks = [
 // 🇺🇸 Array sorted decreasingly with balances of clients with more than $25k on Bank of America
 // 🇪🇸 Arreglo ordenado decrecientemente con los saldos de clientes que tengan más de 25.000 en Bank of America
 
-function richClientsBalances() {
-    // your code here
+const richClientsBalances = (listClient,account,bank) => {
+    const listAccount = account.filter(account2=>account2.bankId===bank)
+    const clientsTotalBalance = listClient.map(client => {
+      const totalBalance = listAccount.reduce((balance, item) => {
+        return client.id === item.clientId ? balance + item.balance : balance
+      }, 0)
+      return { ...client, balance: totalBalance }
+    })
+    .filter(client=>client.balance>25000)
+    .sort((a, b) => b.balance - a.balance)
+    .map(client => client.balance)
+  
+    return clientsTotalBalance
 }
+
+console.log(richClientsBalances(clients,accounts,1));
+ 

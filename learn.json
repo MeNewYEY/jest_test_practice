@@ -1,7 +1,7 @@
 {
     "config": {
         "port": 3000,
-        "address": "https://c83be99e-35a9-43b3-96ba-b90790b8d34d.ws-us03.gitpod.io",
+        "address": "https://jade-puma-yhq1pykx.ws-us03.gitpod.io",
         "editor": {
             "mode": "gitpod",
             "version": "1.0.5"
@@ -14,6 +14,51 @@
         "exercisesPath": "./exercises",
         "disableGrading": false,
         "actions": [
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
+            "build",
+            "test",
+            "reset",
             "build",
             "test",
             "reset"
@@ -117,7 +162,7 @@
             },
             "language": "node",
             "title": "02.1-ids-sorted-by-taxnumber",
-            "graded": false,
+            "graded": true,
             "files": [
                 {
                     "path": "exercises/02.1-ids-sorted-by-taxnumber/README.md",
@@ -133,6 +178,11 @@
                     "path": "exercises/02.1-ids-sorted-by-taxnumber/solution.hide.js",
                     "name": "solution.hide.js",
                     "hidden": true
+                },
+                {
+                    "path": "exercises/02.1-ids-sorted-by-taxnumber/tests.js",
+                    "name": "tests.js",
+                    "hidden": true
                 }
             ],
             "done": false
@@ -146,7 +196,7 @@
             },
             "language": "node",
             "title": "02.2-total-balances",
-            "graded": false,
+            "graded": true,
             "files": [
                 {
                     "path": "exercises/02.2-total-balances/README.md",
@@ -162,6 +212,11 @@
                     "path": "exercises/02.2-total-balances/solution.hide.js",
                     "name": "solution.hide.js",
                     "hidden": true
+                },
+                {
+                    "path": "exercises/02.2-total-balances/tests.js",
+                    "name": "tests.js",
+                    "hidden": true
                 }
             ],
             "done": false
@@ -175,7 +230,7 @@
             },
             "language": "node",
             "title": "02.3-ritch-clients",
-            "graded": false,
+            "graded": true,
             "files": [
                 {
                     "path": "exercises/02.3-ritch-clients/README.md",
@@ -190,6 +245,11 @@
                 {
                     "path": "exercises/02.3-ritch-clients/solution.hide.js",
                     "name": "solution.hide.js",
+                    "hidden": true
+                },
+                {
+                    "path": "exercises/02.3-ritch-clients/tests.js",
+                    "name": "tests.js",
                     "hidden": true
                 }
             ],

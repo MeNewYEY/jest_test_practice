@@ -8,7 +8,8 @@ const data = [
 ];
 
 const listClientsIds = (clients) => {
-    // your code here
+    return clients.map((client=>client.id))
+    
 };
 
 console.log(listClientsIds(data))
